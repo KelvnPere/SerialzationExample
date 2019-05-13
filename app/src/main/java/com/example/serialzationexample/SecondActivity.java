@@ -18,7 +18,7 @@ public class SecondActivity extends Activity {
         String getMessage = getIntent().getStringExtra("sampleKey");
         textViewMessage.setText(getMessage);
 
-        Person person = (Person) getIntent().getSerializableExtra("person");
+        Person person = (Person) getIntent().getParcelableExtra("person");
 
         textViewPerson.setText(person.getFirstName()+ "," + person.getLastName() + "," + person.getQualification());
     }
